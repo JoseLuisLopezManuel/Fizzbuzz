@@ -92,4 +92,9 @@ describe('Test ExplorerController',()=>{
             'ajolonauta15'
           ])
     })
+    
+    test('Requerimiento 3: Cantidad de los explorers en mission',()=>{
+        const explorer1 = ExplorerController.getExplorerAmountByMission('node')
+        expect(explorer1).toBe(10)
+    })
 })
