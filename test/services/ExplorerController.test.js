@@ -76,4 +76,20 @@ describe('Test ExplorerController',()=>{
             }
           ])
     })
+
+    test('Requerimiento 2: Nombres de los explorers en mission',()=>{
+        const explorer1 = ExplorerController.getExplorersUsernamesBy('node')
+        expect(explorer1).toMatchObject(    [
+            'ajolonauta1',
+            'ajolonauta2',
+            'ajolonauta3',
+            'ajolonauta4',
+            'ajolonauta5',
+            'ajolonauta11',
+            'ajolonauta12',
+            'ajolonauta13',
+            'ajolonauta14',
+            'ajolonauta15'
+          ])
+    })
 })
