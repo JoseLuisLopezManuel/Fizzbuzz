@@ -195,7 +195,7 @@ describe("Tests para ExplorerService",() =>{
     test("Requerimiento 4: Mostrar nombre de los explorers en una misión",()=>{
         const explorers = [{githubUsername:"Jose",mission:"node"},{githubUsername:"Lopez",mission:"node"}]
         const explorersInNode = ExplorerService.getAmounOfExplorersByMission(explorers, "node")
-        expect(explorersInNode).toBe(2);
+        expect(explorersInNode).toBe(4);
     })
     test("Requerimiento 5: Refactorizando Fizzbuzz",()=>{
         const explorers = {name:"Jose",score: 1}
